@@ -256,10 +256,8 @@ footer { padding: 28px 20px 40px; text-align: center; font-size: .8rem; color: v
 .publication-year { display: block; margin-bottom: 12px; font-size: .94rem; }
 .publication-figure { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px; padding: 22px; background: #fff; border-right: 1px solid var(--border); text-decoration: none; }
 .publication-figure img { width: 100%; height: auto; max-height: 290px; object-fit: contain; }
-.figure-caption { color: #276ba5; font-size: .75rem; font-weight: 600; }
 .abstract-brief { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border); }
-.abstract-brief summary { cursor: pointer; color: var(--secondary); font-size: .85rem; font-weight: 600; width: fit-content; }
-.abstract-brief summary:focus-visible { outline: 2px solid var(--secondary); outline-offset: 5px; }
+.abstract-label { color: var(--secondary); font-size: .85rem; font-weight: 600; }
 .abstract-brief p { margin-top: 12px; font-size: .86rem; line-height: 1.75; }
 .abstract-source { display: inline-block; margin-top: 8px; font-size: .75rem; }
 
