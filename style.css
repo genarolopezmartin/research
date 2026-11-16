@@ -316,3 +316,62 @@ footer { padding: 28px 20px 40px; text-align: center; font-size: .8rem; color: v
 
 .latest-contribution { border-left: 3px solid var(--secondary); }
 .latest-label { display: block; color: var(--secondary); font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 10px; }
+
+/* Publication bibliography and study filters */
+.study-filters { margin-bottom: 22px; }
+.study-filters > span { display: block; font-size: .85rem; font-weight: 600; margin-bottom: 10px; color: var(--muted); }
+.study-filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.study-filter-buttons button { font: inherit; font-size: .8rem; padding: 7px 12px; border: 1px solid var(--border); border-radius: 20px; background: transparent; color: var(--text); cursor: pointer; }
+.study-filter-buttons button[aria-pressed="true"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+.study-filter-buttons button:focus-visible { outline: 2px solid var(--secondary); outline-offset: 3px; }
+.publication-filter-status { font-size: .8rem; color: var(--muted); }
+.publication-filter-status:empty { display: none; }
+.publication-year { margin-top: 28px; }
+.publication-year-heading { font-size: 1.4rem; color: var(--primary); padding-bottom: 10px; border-bottom: 1px solid var(--border); margin-bottom: 8px; }
+.publication-entries { list-style: none; padding: 0; }
+.publication-entry { display: grid; grid-template-columns: 9px minmax(0,1fr); gap: 20px; padding: 21px 0; }
+.publication-entry + .publication-entry { border-top: 1px solid var(--border); }
+.study-bars { display: flex; gap: 2px; }
+.study-color { flex: 1; background: var(--study-color); border-radius: 2px; }
+.study-review { --study-color: #4d8fc7; }
+.study-research { --study-color: #45947b; }
+.study-theoretical { --study-color: #bf9150; }
+.study-discussion { --study-color: #9270b5; }
+.entry-authors { font-size: .89rem; line-height: 1.45; margin-bottom: 4px; }
+.publication-entry h4 { font-size: 1.06rem; line-height: 1.4; margin: 0 0 5px; }
+.publication-entry h4 a { color: var(--text); text-decoration: none; }
+.publication-entry h4 a:hover { color: var(--secondary); text-decoration: none; }
+.entry-journal { font-size: .9rem; color: var(--muted); line-height: 1.4; }
+.study-types { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 9px; }
+.study-type { font-size: .73rem; color: var(--muted); }
+.study-type::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--study-color); margin-right: 6px; }
+[hidden] { display: none !important; }
+.award-item { padding-block: 21px; }
+.award-body p { line-height: 1.58; }
+.award-institution { margin-bottom: 7px; }
+.award-amount { margin-top: 7px; }
+.diss-card { grid-template-columns: 190px minmax(0, 1fr); }
+.event-image { min-height: 175px; aspect-ratio: auto; }
+.event-body { padding: 16px 24px; }
+.event-body h3 { line-height: 1.45; margin-bottom: 7px; }
+.event-body p { line-height: 1.55; }
+@media (max-width: 600px) {
+ .diss-card { grid-template-columns: 1fr; }
+ .event-image { min-height: 0; height: 155px; aspect-ratio: auto; }
+ .event-body { padding: 18px; }
+ .publication-entry { gap: 14px; }
+}
+
+/* Education and conference spacing */
+.timeline-item { padding: 21px 24px; }
+.timeline-item:first-child { padding-top: 19px; }
+.timeline-item h3 { font-size: 1.02rem; line-height: 1.4; margin-bottom: 7px; }
+.timeline-item > p { font-size: .86rem; line-height: 1.5; }
+.timeline-item .thesis { margin-top: 10px; }
+.event-meta { gap: 9px; margin-bottom: 10px; }
+.event-authors { margin-top: 7px; }
+.event-body .event-link { margin-top: 8px; }
+
+.corresponding-legend { font-size: .76rem; color: var(--muted); margin: -8px 0 18px; }
+.corresponding-mark { font-size: .75em; line-height: 0; }
+.journal-metrics { font-size: .76rem; color: var(--muted); line-height: 1.4; margin-top: 4px; }
